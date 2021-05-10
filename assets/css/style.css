@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
 .faq-section {
     background: #fdfdfd;
     min-height: 100vh;
@@ -111,6 +119,11 @@
   margin-bottom: 1rem;
 }
 
+::selection{
+  background-color: yellow;
+  color: green;
+}
+
 @media (max-width: 991px) {
   .faq {
     margin-bottom: 30px;
@@ -118,5 +131,56 @@
   .faq .card .card-header .faq-title {
     line-height: 26px;
     margin-top: 10px;
+  }
+}
+
+
+
+
+/*.......Loader CSS......*/
+.loader-wrapper {
+  animation: spin 1.2s linear infinite;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+#loader {
+  width: 14px;
+  height: 14px;
+  transform: rotate(75deg);
+}
+#loader::before, #loader::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  animation: load 1.2s linear infinite;
+}
+#loader::before {
+  box-shadow: 18px 18px #0077b6, -18px -18px #2a9d8f;
+}
+#loader::after {
+  box-shadow: 18px 18px #e9c46a, -18px -18px #f4a261;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+@keyframes load {
+  50% {
+    height: 42px;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
 }
