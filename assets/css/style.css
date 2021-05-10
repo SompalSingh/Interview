@@ -30,7 +30,16 @@
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   border-radius: 4px;
 }
-
+.faq h2 {
+  position: relative;
+  padding: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+  border-bottom: 1px dashed #CEE1F8;
+  display: flex;
+  margin: 0;
+}
 .faq .card {
   border: none;
   background: none;
