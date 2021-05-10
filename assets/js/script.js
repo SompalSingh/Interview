@@ -10,13 +10,13 @@
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
         document.querySelector(
-          "body").style.visibility = "hidden";
+          ".faq-section").style.visibility = "hidden";
         document.querySelector(
           "#load").style.visibility = "visible";
     } else {
         document.querySelector(
           "#load").style.display = "none";
         document.querySelector(
-          "body").style.visibility = "visible";
+          ".faq-section").style.visibility = "visible";
     }
 };
