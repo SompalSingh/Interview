@@ -12,10 +12,10 @@ document.onreadystatechange = function() {
         document.querySelector(
           "body").style.visibility = "hidden";
         document.querySelector(
-          "#loader").style.visibility = "visible";
+          "#load").style.visibility = "visible";
     } else {
         document.querySelector(
-          "#loader").style.display = "none";
+          "#load").style.display = "none";
         document.querySelector(
           "body").style.visibility = "visible";
     }
