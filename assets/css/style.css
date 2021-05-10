@@ -5,9 +5,9 @@
 }
 
 body {
+  background-image: url(../images/bg.jpeg);
 }
 .faq-section {
-    background: #fdfdfd;
     min-height: 100vh;
     padding: 5vh 0 0;
 }
@@ -17,6 +17,7 @@ body {
   display: inline-block;
   font-weight: 600;
   line-height: 1;
+  color: #fff;
 }
 .faq-title h2::before {
     content: "";
